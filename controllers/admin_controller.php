@@ -1,0 +1,2 @@
+<?php 
+// controlle admin

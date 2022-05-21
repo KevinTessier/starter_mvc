@@ -13,7 +13,7 @@
     <body>
 
         <header class="header">
-            <?php include 'layout/header.php' ?>
+            <?php include 'front/layout/header.php' ?>
         </header>
 
         <main class="main">
@@ -47,7 +47,7 @@
         </main>
         
         <footer class="footer">
-            <?php include 'layout/footer.php' ?>
+            <?php include 'front/layout/footer.php' ?>
         </footer>
 
     </body>

@@ -14,25 +14,26 @@
     <body>
 
         <header class="header">
-            <?php include 'front/layout/header.php' ?>
+            <?php include 'admin/layout/header.php' ?>
         </header>
+        
+        <sidebar class="sidebar">
+            <?php include 'admin/layout/sidebar.php' ?>
+        </sidebar>
 
         <main class="main">
             <div class="container">
-                <h1 class="title">StarterKit MVC</h1>
+                <h1 class="title">Admin</h1>
 
                 <section class="section">
-                    <?php foreach ($allArticles as $index => $article) { ?>
-                        <h2> <?php echo $article['title'] ?> </h2>
-                        <div> <?php echo $article['firstname'] . ' ' . $article['lastname'] ?> </div>
-                    <?php } ?>
+
                 </section>
 
             </div>
         </main>
 
         <footer class="footer">
-            <?php include 'front/layout/footer.php' ?>
+            <?php include 'admin/layout/footer.php' ?>
         </footer>
     </body>
 </html>

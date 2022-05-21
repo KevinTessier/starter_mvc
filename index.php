@@ -9,26 +9,28 @@ include_once '_classes/Autoloader.php';
 
 Autoloader::register();
 
-/*
+/**
  * DEFINE CURRENT PAGE
  */
+
 if( isset($_GET['page']) && !empty($_GET['page']) ){
-
+  
   $page = trim(strtolower($_GET['page']));
-
+  
 } else {
-
+  
   $page = 'home';
-
+  
 }
 
-/*
+// dd($page);
+
+/**
  *  ARRAY CONTENT ALL PAGES
  */
 $allPages = scandir('controllers/');
 
 if( in_array($page.'_controller.php', $allPages) ){
-
   // INCLUDE PAGE
   include_once 'models/'.$page.'_model.php';
   include_once 'controllers/'.$page.'_controller.php';
